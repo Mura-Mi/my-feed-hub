@@ -33,23 +33,6 @@ const Page: NextPage = () => {
         </ContentWrapper>
       </section>
 
-      <section className="home-members">
-        <ContentWrapper>
-          <div className="home-section-title-container">
-            <h2 className="home-section-title">Members</h2>
-            <Link href="/members">
-              <a className="home-section-link">See Details →</a>
-            </Link>
-          </div>
-
-          <div className="home-members-container">
-            <UndoWrapForScroll>
-              <ScrollableMembers />
-            </UndoWrapForScroll>
-          </div>
-        </ContentWrapper>
-      </section>
-
       <section className="home-posts">
         <ContentWrapper>
           <div className="home-section-title-container">
@@ -58,6 +41,22 @@ const Page: NextPage = () => {
 
           <div className="home-posts-container">
             <PostList items={posts as PostItem[]} />
+          </div>
+        </ContentWrapper>
+      </section>
+      <section className="home-members">
+        <ContentWrapper>
+          <div className="home-section-title-container">
+            <h2 className="home-section-title">Sources</h2>
+            <Link href="/members">
+              <a className="home-section-link">See Details →</a>
+            </Link>
+          </div>
+
+          <div className="home-members-container">
+            <UndoWrapForScroll>
+              <ScrollableMembers/>
+            </UndoWrapForScroll>
           </div>
         </ContentWrapper>
       </section>

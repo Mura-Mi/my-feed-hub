@@ -1,8 +1,8 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
-    teamName: "catnose Inc.",
-    description: "RSS based blog starter kit for teams.",
+    title: "Mura-Mi's Feed Hub",
+    teamName: "Takuya \"Mura-Mi\" Murakami",
+    description: "Mura-Mi's online publishing",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
@@ -14,12 +14,12 @@ export const config = {
       href: "/about",
     },
     {
-      title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      title: "Profile",
+      href: "https://murataku.yokohama/",
     },
     {
       title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://github.com/Mura-Mi",
     },
   ],
 };
