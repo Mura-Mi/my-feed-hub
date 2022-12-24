@@ -2,6 +2,9 @@ name: cron refresh
 on:
   schedule:
     - cron: '5 0-18 * * *'
+  push:
+    branches:
+      - 'main'
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,3 +16,4 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-project-id: ${{ secrets.PROJ_ID }}
           vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-args: '--prod'
